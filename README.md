@@ -23,15 +23,6 @@ Welcome to **Foodie**, a modern and responsive restaurant website built with **H
 
 ---
 
-## 📷 Screenshots
-
-| Home Page | Menu Section | Sign Up Page |
-|----------|--------------|--------------|
-| ![Home](https://via.placeholder.com/250x150) | ![Menu](https://via.placeholder.com/250x150) | ![Sign Up](https://via.placeholder.com/250x150) |
-
-(*Replace placeholders with actual screenshots if deployed*)
-
----
 
 ## 🚀 Getting Started
 
@@ -41,8 +32,3 @@ Welcome to **Foodie**, a modern and responsive restaurant website built with **H
 - Web browser
 - Git (optional for cloning)
 
-### Steps to Run Locally
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
