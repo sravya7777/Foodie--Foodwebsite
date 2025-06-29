@@ -1,0 +1,29 @@
+.id1{
+    margin: 200px;
+    margin-left: 550px;
+}
+.box{
+    border: solid black 2px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+#super{
+    margin: 200px;
+    margin-left: 550px;
+    border: solid black 2px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+.logins{
+    display: flex;
+    margin-left: 190px;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.button{
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+}

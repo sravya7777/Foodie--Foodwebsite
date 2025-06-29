@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function search(){
+        const search=document.getElementById('search').value.toLowerCase();
+        const items=document.querySelectorAll('#list .menu-item');
+        
+        items.forEach(item =>{
+          const items1=item.querySelector('h3').textContent.toLowerCase();
+          const items2=item.querySelector('p').textContent.toLowerCase();
+          if(items1.textContent.includes(search)||items2.textContent.includes(search)){
+            item.style.display="block";
+          }else{
+            item.style.display="none";
+          }
+        });
+      }
+    </script>
+</head>
+<body>
+
+     <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="images.png" alt="Food Coin" class="coin-logo">
+      <span>Foodie</span>
+    </div>
+    <ul class="nav-links">
+      <input type="text" placeholder="Search for food" id="search" oninput="search()">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hotel.html">Hotel</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.php">Sign Up</a></li>
+    </ul>
+  </nav>
+    <section id="menu-section">
+        <h2 class="section-title">Our Popular Menu</h2>
+        <div class="menu-container" id="list">
+          <!-- Menu Items -->
+          <div class="menu-item">
+            <img src="pic4.jpeg" alt="Biryani"height="200px">
+            <h3>Biryani</h3>
+            <p>Aromatic rice cooked with flavorful spices and meat.</p>
+            <p>₹600.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="pizza.jpeg" alt="Pizza"height="200px">
+            <h3>Pizza</h3>
+            <p>Delicious cheese-filled pizzas with various toppings.</p>
+            <p>₹200.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="burger.jpeg" alt="Burger"height="200px">
+            <h3>Burger</h3>
+            <p>Juicy patties layered with fresh veggies and sauces.</p>
+            <p>₹250.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="pasta.jpeg" alt="Pasta"height="200px">
+            <h3>Pasta</h3>
+            <p>Italian pasta cooked with rich and creamy sauces.</p>
+            <p>₹300.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="salad.jpeg" alt="Salad"height="200px">
+            <h3>Salad</h3>
+            <p>Healthy salads with fresh ingredients and dressings.</p>
+            <p>₹150.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="icecream.jpeg" alt="Ice Cream"height="200px">
+            <h3>Ice Cream</h3>
+            <p>Refreshing scoops of ice cream in various flavors.</p>
+            <p>₹80.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="soup.jpeg" alt="Soup"height="200px">
+            <h3>Soup</h3>
+            <p>Warm soups with rich and hearty flavors.</p>
+            <p>₹70.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="stake.jpeg" alt="Steak" height="200px">
+            <h3>Steak</h3>
+            <p>Perfectly grilled steaks with seasoned sides.</p>
+            <p>₹200.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="ramen.jpeg" alt="Dessert" height="200px">
+            <h3>Ramen</h3>
+            <p>Sweet treats to end your meal on a high note.</p>
+            <p>₹200.00</p>
+          </div>
+        </div>
+      </section>
+       <!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Foodie Limited</p>
+  
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Foodie Corporate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Foodie One</a></li>
+          <li><a href="#">Foodie Instamart</a></li>
+          <li><a href="#">Foodie Dineout</a></li>
+          <li><a href="#">Foodie Genie</a></li>
+          <li><a href="#">Minis</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Partner with us</a></li>
+          <li><a href="#">Ride with us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Available in:</h4>
+        <ul class="locations">
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Gurgaon</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Delhi</a></li>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Pune</a></li>
+          <li>685 cities</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Life at Foodie</h4>
+        <ul>
+          <li><a href="#">Explore with Foodie</a></li>
+          <li><a href="#">Foodie News</a></li>
+          <li><a href="#">Snackables</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Social Links</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+
+      
+</body>
+</html>
